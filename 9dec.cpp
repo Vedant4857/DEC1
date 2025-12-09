@@ -71,20 +71,82 @@ int main()
 
   // binary to decimal
 
-  int bin = 1101;
-  int mul = 1;
-  int  ans = 0;
+  // int bin = 1101;
+  // int mul = 1;
+  // int  ans = 0;
 
-  while(bin>0){
-    int rem = bin % 10;
-    ans = rem * mul + ans;
-    mul = mul * 2;
-    bin = bin/10;
-  }
-  cout<<ans;
-
-
+  // while(bin>0){
+  //   int rem = bin % 10;
+  //   ans = rem * mul + ans;
+  //   mul = mul * 2;
+  //   bin = bin/10;
+  // }
+  // cout<<ans;
 
 
+  // factorial
+  // int n = 6;
+  // int sum = 1;
+
+  // for (int i = 1; i <=n; i++)
+  // {
+  //   sum = sum * i;
+  // }
+
+  // cout<<sum;
+
+
+  // fibonacci
+
+  // int n = 9;
+
+  // if(n<=1){
+  //   cout<<n;
+  // }
+  // int first = 0;
+  // int second = 1;
+
+  // for (int i = 2; i <=n; i++)
+  // {
+  //   int curr = first + second;
+  //   first = second;
+  //   second = curr;
+  // // }
+  // // cout<<second;
+  
+
+  // // Armstrong
+  \
+  // int x = 153;
+  // int y = x;
+  // int rem,sum =0;
+
+  // while(y>0){
+  //   rem = y%10;
+  //   sum = sum + rem * rem * rem;
+  //   y = y/10;
+  // }
+  // if(sum==x){
+  //   cout<<"Yes it is Armstrong";
+  // }
+  // else{
+  //   cout<<"Not a armstrong";
+  // }
+
+
+  // square root of a number
+
+  // int x = 399;
+  // int y,sqrt;
+
+  // for (int i = 1; i <x; i++)
+  // {
+  //   y = i*i;
+  //   if(y<=x){
+  //     sqrt = i;
+  //   }
+  // }
+  // cout<<sqrt;
+  
   return 0;
 }

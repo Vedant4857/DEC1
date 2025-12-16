@@ -34,22 +34,64 @@ int main()
   // array, index why start with zero?
   // int arr[10];
 
-  int n;
-  cout<<"Enter size of an array?";
-  cin>>n;
-  int arr[n];
+  // int n;
+  // cout<<"Enter size of an array?";
+  // cin>>n;
+  // int arr[n];
 
-  cout<<"Enter the elements in the array?";
+  // cout<<"Enter the elements in th e array?";
   
-  for (int i = 0; i < n; i++)
-  {
-    cin>>arr[i];
-  }
+  // for (int i = 0; i < n; i++)
+  // {
+  //   cin>>arr[i];
+  // }
   
-  for (int i = 0; i < n; i++)
+  // for (int i = 0; i < n; i++)
+  // {
+  //   cout<<arr[i]<<endl;
+  // }
+
+  int marks[5] = {70,40,20,48,90};
+  // int sum = 0;
+  //  for (int i = 0; i < 5; i++)
+  //  {
+  //   sum += marks[i];
+  //  }
+
+  //  cout<<sum/5;
+
+  // for (int i = 0; i < 5; i++)
+  // {
+  //   cout<<&marks[i]<<endl;
+  // }
+
+  // Highest marks??
+  // int max = marks[0];
+  // int index =0;
+
+  // for (int i = 0; i < 5; i++)
+  // {
+  //   if(marks[i]>max){
+  //     max = marks[i];
+  //     index = i;
+  //   }
+  // }
+  // cout<<max<<endl;
+  // cout<<index;
+
+  // linear search
+  int search = 50;
+  for (int i = 0; i < 5; i++)
   {
-    cout<<arr[i]<<endl;
+    if(marks[i]==search){
+      cout<<"Found at index:"<<i;
+      return 0;
+    }
   }
+  cout<<"Not found";
+  
+  
+   
   
   
 

@@ -1,1 +1,1 @@
-ptr
+i + print(i-1)

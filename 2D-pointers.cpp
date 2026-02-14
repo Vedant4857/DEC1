@@ -26,7 +26,7 @@ int main()
 
     for(int i=0;i<2;i++){
       delete[] arr[i];
-}
+    }
 delete[] arr;
 
   return 0;

@@ -1,1 +1,1 @@
-i + print(i-1)
+    cout<<endl;

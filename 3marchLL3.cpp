@@ -71,11 +71,5 @@ int main()
     cout<<temp->data<<" ";
     temp = temp->next;
   }
-
-
-
-
-
-
   return 0;
 }

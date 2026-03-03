@@ -6,6 +6,13 @@ class Student{
   string name;
   int age;
   int RollNo;
+
+  //Constructor
+  Student(string n1, int ag1, int roll){
+    name = n1;
+    age = ag1;
+    RollNo = roll;
+  }
 };
 class Customer{
   public:
@@ -19,20 +26,23 @@ class Customer{
 
 int main()
 {
-  Student S1,S2,S3;
-  S1.name = "Vedant";
-  S1.age = 20;
-  S1.RollNo = 103;
+  // Student S1,S2,S3;
+  // S1.name = "Vedant";
+  // S1.age = 20;
+  // S1.RollNo = 103;
 
-  S2.name = "Mainak";
-  S2.age = 20;
-  S2.RollNo = 30;
+  // S2.name = "Mainak";
+  // S2.age = 20;
+  // S2.RollNo = 30;
 
-  S3 = S2;
+  // S3 = S2;
 
+  // cout<<S1.name<<" "<<S1.age<<" "<<S1.RollNo<<endl;
+  // cout<<S2.name<<" "<<S2.age<<" "<<S2.RollNo<<endl;
+  // cout<<S3.name<<" "<<S3.age<<" "<<S3.RollNo<<endl;
+
+  Student S1("Vedant",20,103);
   cout<<S1.name<<" "<<S1.age<<" "<<S1.RollNo<<endl;
-  cout<<S2.name<<" "<<S2.age<<" "<<S2.RollNo<<endl;
-  cout<<S3.name<<" "<<S3.age<<" "<<S3.RollNo<<endl;
 
   Customer C1;
   C1.name = "Kamlaj";

@@ -18,7 +18,6 @@ int main()
   C1->age = 20;
   C1->balance = 20000;
 
-
   cout<<C1->name;
 
   return 0;

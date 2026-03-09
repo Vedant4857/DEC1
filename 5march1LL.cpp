@@ -10,7 +10,7 @@ class Node{
     next = NULL;
   }
 };
-
+//main
 int main(){
 
   int arr[5] = {44,12,96,32,20};

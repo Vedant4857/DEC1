@@ -51,7 +51,6 @@ class Queue{
       delete temp;
     }
   }
-
   int getFront(){
     if(isEmpty()){
       cout<<"Queue is Empty";
@@ -84,11 +83,6 @@ int main()
   q.push(20);
   q.push(10);
   q.push(20);
-  q.pop();
-  q.pop();
-  q.pop();
-  q.pop();
-  q.pop();
   q.pop();
   q.pop();
   q.pop();

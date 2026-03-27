@@ -81,16 +81,66 @@ class Dequeue{
         front = rear = NULL;
       }
       else{
+<<<<<<< Updated upstream
         cout<<rear->val<<":popped back from dequeue"<<endl;
+=======
+        cout<<front->val<<":popped front from dequeue"<<endl;
+>>>>>>> Stashed changes
         front = front->next;
         delete front->prev;
         front->prev = NULL;
         size--;
       }
   }
+<<<<<<< Updated upstream
 };
 int main()
 {
     
+=======
+  
+  int issSize(){
+    return size;
+  }
+
+  int getFront(){
+    if(isEmpty()){
+      return -1;
+    }
+    return front->val;
+  }
+
+  int getBack(){
+    if(isEmpty()){
+      return -1;
+    }
+    return rear->val;
+  }
+
+};
+int main()
+{
+    Dequeue D;
+    D.pushBack(20);
+    D.pushBack(30);
+    D.pushFront(80);
+    D.pushBack(97);
+    D.pushFront(11);
+
+    cout<<D.size<<endl;
+    cout<<D.getFront()<<endl;
+    cout<<D.getBack()<<endl;
+
+    D.popBack();
+    D.popFront();
+    cout<<D.getFront()<<endl;
+    cout<<D.getBack()<<endl;
+    D.popBack();
+    D.popFront();
+    D.popBack();
+    D.popFront();
+
+
+>>>>>>> Stashed changes
     return 0;
 }

@@ -81,24 +81,14 @@ class Dequeue{
         front = rear = NULL;
       }
       else{
-<<<<<<< Updated upstream
         cout<<rear->val<<":popped back from dequeue"<<endl;
-=======
         cout<<front->val<<":popped front from dequeue"<<endl;
->>>>>>> Stashed changes
         front = front->next;
         delete front->prev;
         front->prev = NULL;
         size--;
       }
   }
-<<<<<<< Updated upstream
-};
-int main()
-{
-    
-=======
-  
   int issSize(){
     return size;
   }
@@ -116,7 +106,6 @@ int main()
     }
     return rear->val;
   }
-
 };
 int main()
 {
@@ -141,6 +130,5 @@ int main()
     D.popFront();
 
 
->>>>>>> Stashed changes
     return 0;
 }

@@ -43,6 +43,17 @@ void postorder(Node *root){
   cout<<root->data<<" ";
 }
 
+void Levelorder(Node * root,queue<Node *>&qu){
+  if(qu.empty()){
+    return;
+  }
+  cout<<root->data<<" ";
+  qu.pop();
+  qu.push(root->left);
+  qu.push(root->right);
+  Levelorder(qu.front(),qu);
+}
+
 int main()
 {
   int x,leftvalue,rightvalue;
@@ -84,5 +95,12 @@ int main()
   cout<<"Postorder Traversal:"<<" ";
   postorder(root);
   cout<<endl;
+  
+  cout<<"Levelorder Traversal:"<<" ";
+  queue<Node *>qu;
+  qu.push(root);
+  Levelorder(root,qu);
+  cout<<endl;
+
   return 0;
 }

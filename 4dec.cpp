@@ -4,13 +4,11 @@ using namespace std;
 int main()
 {
   // Even number
-  
+
   // for (int i = 0; i < 20; i=i+2)
   // {
   //   cout<<i<<endl;
   // }
-
-
 
   // odd number
 
@@ -18,7 +16,7 @@ int main()
   // {
   //   cout<<i<<endl;
   // }
-  
+
   // a to z
 
   // for (int i = 97; i < 123; i++)
@@ -40,7 +38,6 @@ int main()
   //   sum+=i;
   // }
   // cout<<sum;
-  
 
   // sum of squares of 1st 10 numbers
   // int sum = 0;
@@ -49,7 +46,7 @@ int main()
   //   sum = sum + i * i;
   // }
   // cout<<sum<<endl;
-  
+
   // 1 2 3 4 5
   // 1 2 3 4 5
   // 1 2 3 4 5
@@ -65,7 +62,6 @@ int main()
   // }
   // cout<<endl;
   // }
-  
 
   // a b c d e
   // a b c d e
@@ -109,7 +105,7 @@ int main()
   //     cout<<"*";
   //   }
   //   cout<<endl;
-    
+
   // }
 
   // *
@@ -132,7 +128,7 @@ int main()
   // ***
   // **
   // *
-  
+
   // for (int i = 5; i>0; i--)
   // {
   //   for (int j = 0; j <i; j++)
@@ -157,10 +153,8 @@ int main()
   //   cout<<endl;
   // }
 
-
   // 1 2 3 4 5
   // 6 7 8 9 10 upto 25
-
 
   // for (int j = 0; j <21; j+=5)
   // {
@@ -171,41 +165,16 @@ int main()
   // cout<<endl;
   // }
 
-  int num =1;
+  int num = 1;
   for (int i = 0; i < 5; i++)
   {
     for (int j = 0; j < 5; j++)
     {
-      cout<<num<<" ";
+      cout << num << " ";
       num++;
     }
-    cout<<endl;
-    
+    cout << endl;
   }
-  
-  
-  
-  
-
-
-
-  
-  
-  
-  
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
 
   return 0;
 }

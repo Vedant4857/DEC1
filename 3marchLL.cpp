@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Node{
-  public:
+class Node
+{
+public:
   int data;
   Node *next;
 
-  Node(int value, Node *add){
+  Node(int value, Node *add)
+  {
     data = value;
     next = add;
   }
@@ -19,7 +21,7 @@ int main()
 
   // cout<<N1.data<<" ";
 
-  Node *head = new Node(10,NULL);
-  cout<<head->data;
+  Node *head = new Node(10, NULL);
+  cout << head->data;
   return 0;
 }

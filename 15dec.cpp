@@ -40,18 +40,18 @@ int main()
   // int arr[n];
 
   // cout<<"Enter the elements in th e array?";
-  
+
   // for (int i = 0; i < n; i++)
   // {
   //   cin>>arr[i];
   // }
-  
+
   // for (int i = 0; i < n; i++)
   // {
   //   cout<<arr[i]<<endl;
   // }
 
-  int marks[5] = {70,40,20,48,90};
+  int marks[5] = {70, 40, 20, 48, 90};
   // int sum = 0;
   //  for (int i = 0; i < 5; i++)
   //  {
@@ -83,19 +83,13 @@ int main()
   int search = 50;
   for (int i = 0; i < 5; i++)
   {
-    if(marks[i]==search){
-      cout<<"Found at index:"<<i;
+    if (marks[i] == search)
+    {
+      cout << "Found at index:" << i;
       return 0;
     }
   }
-  cout<<"Not found";
-  
-  
-   
-  
-  
-
-
+  cout << "Not found";
 
   return 0;
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // int add(int *p,int size){
@@ -9,7 +9,8 @@ using namespace std;
 //   return ans;
 // }
 
-int main(){
+int main()
+{
   // int a = 10;
   // int *b = &a;
   // cout<<&a<<endl;
@@ -29,12 +30,12 @@ int main(){
   // cout<<&ptr<<endl;
   // //address of ptr
 
-  //Printing the address
-  // int arr[6] = {1,2,3,4,5,6};
-  // for (int i = 0; i < 6; i++)
-  // {
-  //   cout<<arr+i<<endl;
-  // }
+  // Printing the address
+  //  int arr[6] = {1,2,3,4,5,6};
+  //  for (int i = 0; i < 6; i++)
+  //  {
+  //    cout<<arr+i<<endl;
+  //  }
 
   // //Printing the values
   // for (int i = 0; i < 6; i++)
@@ -57,10 +58,9 @@ int main(){
   // int ans = add(arr,10);
   // cout<<ans;
 
-  char arr[5] = {'a','b','c','d','e'};
+  char arr[5] = {'a', 'b', 'c', 'd', 'e'};
   char *ptr = arr;
-  cout<<ptr;
-  
+  cout << ptr;
 
   return 0;
-} 
+}

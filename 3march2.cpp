@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
-class Customer{
-  public:
+class Customer
+{
+public:
   int age, balance;
   string name;
 };
@@ -18,7 +19,7 @@ int main()
   C1->age = 20;
   C1->balance = 20000;
 
-  cout<<C1->name;
+  cout << C1->name;
 
   return 0;
 }

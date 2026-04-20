@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    
+
   // for loop
-  //while loop
+  // while loop
 
   // int i = 1;
 
@@ -14,8 +14,6 @@ int main()
   //   i++;
 
   // }while(i<10);
-
-
 
   // reverse of a number
 
@@ -30,8 +28,6 @@ int main()
   //   n = n/10;
   // }
   // cout<<sum;
-
-
 
   //  decimal to binary
   // int n =13;
@@ -83,7 +79,6 @@ int main()
   // }
   // cout<<ans;
 
-
   // factorial
   // int n = 6;
   // int sum = 1;
@@ -94,7 +89,6 @@ int main()
   // }
 
   // cout<<sum;
-
 
   // fibonacci
 
@@ -113,10 +107,9 @@ int main()
   //   second = curr;
   // // }
   // // cout<<second;
-  
 
   // // Armstrong
-  \
+
   // int x = 153;
   // int y = x;
   // int rem,sum =0;
@@ -133,7 +126,6 @@ int main()
   //   cout<<"Not a armstrong";
   // }
 
-
   // square root of a number
 
   // int x = 399;
@@ -147,6 +139,6 @@ int main()
   //   }
   // }
   // cout<<sqrt;
-  
+
   return 0;
 }

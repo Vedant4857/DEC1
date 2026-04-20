@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int num){
+int factorial(int num)
+{
   int fact = 1;
-  for (int i = 1; i <=num; i++)
+  for (int i = 1; i <= num; i++)
   {
     fact = fact * i;
   }
@@ -12,12 +13,12 @@ int factorial(int num){
 
 int main()
 {
-  //factorial
+  // factorial
   int n;
-  cout<<"Enter the number for factorial:";
-  cin>>n;
+  cout << "Enter the number for factorial:";
+  cin >> n;
   int ans = factorial(n);
-  cout<<ans;
-  
+  cout << ans;
+
   return 0;
 }

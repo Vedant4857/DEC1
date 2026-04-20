@@ -54,7 +54,7 @@ void mergesort(int arr[], int low, int high)
 int main()
 {
   int size = 10;
-  int arr[size] = {51, 31, 75, 98, 24, 65, 23, 48, 0, 4, 85, 78};
+  int arr[10] = {51, 31, 75, 98, 24, 65, 23, 48, 0, 4};
   mergesort(arr, 0, size - 1);
 
   for (int i = 0; i < size; i++)

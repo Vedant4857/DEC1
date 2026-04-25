@@ -21,11 +21,11 @@ public:
         int left = 2 * i + 1;
         int right = 2 * i + 2;
 
-        if (arr[largest] < arr[left])
+        if (left < index && arr[largest] < arr[left])
         {
             largest = left;
         }
-        if (arr[largest] < arr[right])
+        if (right < index && arr[largest] < arr[right])
         {
             largest = right;
         }
@@ -47,7 +47,7 @@ public:
         if (index == 0)
         {
             arr[index] = value;
-            cout << arr[index] << ":Inserted in the heap" << endl;
+            cout << value << ":Inserted in the heap" << endl;
             index++;
             return;
         }
@@ -62,7 +62,7 @@ public:
             i = (i - 1) / 2;
         }
 
-        cout << arr[i] << ":Inserted into maxheap\n";
+        cout << value << ":Inserted in the heap\n";
     }
 
     void deleteHeap()
@@ -79,9 +79,9 @@ public:
             return;
         }
 
+        cout << arr[0] << ":Deleted from Heap" << endl;
         index--;
         arr[0] = arr[index];
-        cout << arr[0] << ":Deleted from Heap" << endl;
 
         Heapify(0);
     }

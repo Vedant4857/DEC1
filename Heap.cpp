@@ -15,6 +15,28 @@ public:
         index = 0;
     }
 
+    void Heapify(int i)
+    {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (arr[largest] < arr[left])
+        {
+            largest = left;
+        }
+        if (arr[largest] < arr[right])
+        {
+            largest = right;
+        }
+        if (largest == i)
+        {
+            return;
+        }
+        swap(arr[largest], arr[i]);
+        Heapify(largest);
+    }
+
     void insert(int value)
     {
         if (index == size)
@@ -42,10 +64,42 @@ public:
 
         cout << arr[i] << ":Inserted into maxheap\n";
     }
+
+    void deleteHeap()
+    {
+        if (index == 0)
+        {
+            cout << "Heap Underflow" << endl;
+            return;
+        }
+        if (index == 1)
+        {
+            cout << arr[0] << ":Deleted from Heap" << endl;
+            index--;
+            return;
+        }
+
+        index--;
+        arr[0] = arr[index];
+        cout << arr[0] << ":Deleted from Heap" << endl;
+
+        Heapify(0);
+    }
+
+    void printHeap()
+    {
+        for (int i = 0; i < index; i++)
+        {
+            cout << arr[i] << " ";
+        }
+    }
 };
+
 int main()
 {
     MaxHeap v(5);
     v.insert(5);
     v.insert(4);
+    v.deleteHeap();
+    v.printHeap();
 }

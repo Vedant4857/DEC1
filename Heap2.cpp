@@ -1,43 +1,58 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
-void heapify(int arr[], int index, int N)
+void swapVal(int &a, int &b)
 {
-    int largest = index;
-    int left = 2 * index + 1;
-    int right = 2 * index + 2;
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
-    if (left < N && arr[left] > arr[largest])
+void heapify(int arr[], int i, int n)
+{
+    while (true)
     {
-        largest = left;
-    }
-    if (right < N && arr[right] > arr[largest])
-    {
-        largest = right;
-    }
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
 
-    if (largest != index)
-    {
-        swap(arr[largest], arr[index]);
-        heapify(arr, largest, N);
+        if (left < n && arr[left] > arr[largest])
+            largest = left;
+
+        if (right < n && arr[right] > arr[largest])
+            largest = right;
+
+        if (largest != i)
+        {
+            swapVal(arr[i], arr[largest]);
+            i = largest; // move down
+        }
+        else
+        {
+            break;
+        }
     }
 }
-void buildMaxHeap(int arr[], int N)
+
+void buildMaxHeap(int arr[], int n)
 {
-    for (int i = N / 2 - 1; i >= 0; i++)
+    for (int i = n / 2 - 1; i >= 0; i--)
     {
-        heapify(arr, i, N);
+        heapify(arr, i, n);
     }
 }
+
 int main()
 {
     int arr[] = {10, 15, 18, 30, 17, 26, 48, 6, 8, 19};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    buildMaxHeap(arr, 10);
+    buildMaxHeap(arr, n);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
+
+    return 0;
 }

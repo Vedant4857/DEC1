@@ -52,7 +52,7 @@ void heapsort(int arr[], int N)
 }
 int main()
 {
-    int arr[] = {10, 15, 18, 30, 17, 26, 48, 6, 8, 19};
+    int arr[] = {10, 15, 18, 30, 17, 26, 48, 5, 8, 19};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     buildMaxHeap(arr, n);

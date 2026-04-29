@@ -7,6 +7,6 @@ int main()
   char C = 'V';
   string str = "Hello Coder Army";
 
-  cout<<str;
+  cout << str;
   return 0;
 }

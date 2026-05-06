@@ -1,8 +1,9 @@
-#include<iostream>
-#include<unordered_set>
+#include <iostream>
+#include <unordered_set>
 using namespace std;
 
-int main(){
+int main()
+{
     // set<int>s;
     // s.insert(10);
     // s.insert(45);
@@ -26,12 +27,12 @@ int main(){
     // cout<<s.size();
     // s.erase({10,45});
 
-    //sorted unique
-    // set<int>s;
-    // s.insert(10);
-    // s.insert(45);
-    // s.insert(67);
-    // s.insert(45);
+    // sorted unique
+    //  set<int>s;
+    //  s.insert(10);
+    //  s.insert(45);
+    //  s.insert(67);
+    //  s.insert(45);
 
     // // auto it = s.find(10);
     // // cout<<*it;
@@ -43,12 +44,12 @@ int main(){
     //     cout<<"not found";
     // }
 
-    //unsorted unique
-    // unordered_set<int>s;
-    // s.insert(890);
-    // s.insert(45);
-    // s.insert(67);
-    // s.insert(69);
+    // unsorted unique
+    //  unordered_set<int>s;
+    //  s.insert(890);
+    //  s.insert(45);
+    //  s.insert(67);
+    //  s.insert(69);
 
     // for(auto x : s){
     //     cout<<x<<" ";
@@ -64,18 +65,15 @@ int main(){
     //     cout<<x<<" ";
     // }
 
-    //Not sorted but duplicates allowed
+    // Not sorted but duplicates allowed
 
-    unordered_multiset<int>s;
+    unordered_multiset<int> s;
     s.insert(890);
     s.insert(45);
     s.insert(67);
     s.insert(45);
-    for(auto x : s){
-        cout<<x<<" ";
+    for (auto x : s)
+    {
+        cout << x << " ";
     }
-
-
-
-
 }

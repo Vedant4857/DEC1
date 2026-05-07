@@ -9,16 +9,13 @@ int main()
   // cout<<"Enter the second number:";
   // cin>>b;
 
-
   // cout<<"Your sum is:"<<a+b;
-
 
   // char c = 'a'+1;;
   // cout<<c;
   // cout<<sizeof(c);
 
   // arithmetic operator   +,-,*,/,%
-
 
   // int a = 20;
   // int b = 10;
@@ -32,7 +29,7 @@ int main()
   // assignment operator
 
   // a+=b;
-  // a = a + b; 
+  // a = a + b;
 
   // a=-b;
   // // a = a - b;
@@ -82,13 +79,12 @@ int main()
   // cout<<b<<endl;
   // cout<<a;
 
-
-  //bit wise operator
-  //  & | ^  and, or, xor   operations on bits of these numbers
+  // bit wise operator
+  //   & | ^  and, or, xor   operations on bits of these numbers
   int a = 10;
-  int b  = 5;
+  int b = 5;
 
-  cout<<(a ^ b);
+  cout << (a ^ b);
 
   return 0;
 }

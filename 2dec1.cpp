@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-  
 
   // int age;
   // cout<<"Enter the age:";
@@ -12,7 +11,7 @@ int main()
   // if(age>=18)
   //   cout<<"Eligible to vote";
   // else
-  //   cout<<"Not eligible to vote";  
+  //   cout<<"Not eligible to vote";
 
   // int marks;
 
@@ -45,7 +44,7 @@ int main()
   // case 1:{
   //   cout<<"Monday";
   //   break;}
-  
+
   // case 2:{
   //   cout<<"Tuesday";
   //   break;
@@ -61,21 +60,21 @@ int main()
   // case 5:{
   //   cout<<"Friday";
   //   break;
-  // }  
+  // }
   // case 6:{
   //   cout<<"Saturday";
   //   break;
-  // }  
+  // }
   // case 7:{
   //   cout<<"Sunday";
   //   break;
-  // }  
+  // }
   // default:
   //   cout<<"Invalid";
   //   break;
   // }
 
-  //even or odd
+  // even or odd
 
   // int num;
   // cout<<"Enter number:";
@@ -100,7 +99,7 @@ int main()
   //   cout<<"Both are greater";
   // }
 
-  //loops
+  // loops
 
   // cout<<"Hello vedant"<<endl;
   // cout<<"Hello vedant"<<endl;
@@ -112,10 +111,10 @@ int main()
   //   cout<<"Hello vedant"<<endl;
   // }
 
-  for(int i =1;i<=10;i++){
-    cout<<i<<endl;
+  for (int i = 1; i <= 10; i++)
+  {
+    cout << i << endl;
   }
-
 
   return 0;
 }

@@ -60,3 +60,8 @@ int main()
     student *s2 = new student("Virat", 38, 204, "DU");
     cout << s2->name << " " << s2->age << " " << s2->rollNumber << " " << s2->college << endl;
 }
+
+// encapsulation
+//-->charcteristics and ba]ehaviours are isnide one object they are intrinsic for them(variables and methods are encapsulated in a class)
+// data security data should belong to that only not to others
+// for data security --> access modifiers

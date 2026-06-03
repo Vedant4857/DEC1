@@ -39,15 +39,18 @@ int main()
     Animal *A;
 
     string userInput;
-    cin>>userInput;
+    cin >> userInput;
 
-    if(userInput=="duck"){
+    if (userInput == "duck")
+    {
         A = new Duck();
     }
-    else if(userInput=="dog"){
+    else if (userInput == "dog")
+    {
         A = new Dog();
     }
-    else{
+    else
+    {
         A = new Human();
     }
     A->run();

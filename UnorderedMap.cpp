@@ -1,16 +1,17 @@
-#include<iostream>
-#include<map>
+#include <iostream>
+#include <map>
 using namespace std;
 
-int main(){
-    unordered_multimap<string,int> m;
+int main()
+{
+    unordered_multimap<string, int> m;
 
-    //how to insert
-    // m["vedant"] = 103;
-    // m["John"] = 122;
-    // m["david"] = 344;
+    // how to insert
+    //  m["vedant"] = 103;
+    //  m["John"] = 122;
+    //  m["david"] = 344;
 
-    m.insert({"Harsh",234});
+    m.insert({"Harsh", 234});
 
     // cout<<m["Harsh"]<<" ";
 
@@ -20,25 +21,14 @@ int main(){
 
     auto it = m.find("Harsh");
 
-    if(it!=m.end()){
-        cout<<"Found";
+    if (it != m.end())
+    {
+        cout << "Found";
     }
-    else{
-        cout<<"Not found";
+    else
+    {
+        cout << "Not found";
     }
-
-
-
-
-
-
-    
-
-
-
-
-
-
 
     return 0;
 }

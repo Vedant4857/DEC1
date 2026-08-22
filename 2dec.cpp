@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
   // int a,b;
   // cout<<"Enter the first number:";
   // cin>>a;
@@ -59,8 +58,8 @@ int main()
   // cout<<(true&&true)<<endl; and  both should be true
   // cout<<(true&&0);
 
-  // cout<<(true||true)<<endl; or  if both side false then only false otherwise true
-  // cout<<(0||0);
+  // cout<<(true||true)<<endl; or  if both side false then only false otherwise
+  // true cout<<(0||0);
 
   // cout<<(!false);  not   if true then false and if false then true
 
